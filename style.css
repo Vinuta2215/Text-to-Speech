@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("img.jpg"); /* Replace with your desired background image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Containers */
+.auth-container,
+.app-container {
+  background-color: rgba(166, 236, 233, 0.8); /* Semi-transparent background */
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 100%; /* Responsive for small screens */
+  
+}
+
+/* Sign Up/Log In Forms */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+.form-container input:focus,
+.form-container button:focus {
+  outline-color: black ;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-container button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+}
+
+.auth-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.auth-container a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Text to Speech Converter */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.headings-container {
+  text-align: center;
+}
+
+.headings-container h1 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  color: #3498db;
+}
+
+.interaction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-control {
+  resize: none;
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.error-para {
+  color: red;
+  font-size: 14px;
+}
+
+#convertBtn {
+  background-color: #4086e2;
+  color: #fff;
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 20px;
+  
+}
+
+#convertBtn:hover {
+  background-color: #2ecccc;
+  font-size: 18px;
+}
+
+#logoutBtn {
+  background-color: #4086e2;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#logoutBtn:hover {
+  background-color: #2ecccc;
+  font-size: 18px;
+}
